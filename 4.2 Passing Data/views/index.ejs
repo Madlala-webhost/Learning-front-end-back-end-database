@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <% if (letterCount === null){ %>
+    <h1>Let's find out how many letters are in your full name.</h1>
+  <% }else { %>
+     <h1>There are <%= letterCount %> letters in your full name.</h1>
+  <% } %>
+ 
+
+  <form action="/submit" method="POST">
+    <input type="text" name="fName" placeholder="First name" required>
+    <input type="text" name="lName" placeholder="Last name" required>
+    <input type="submit" value="OK">
+  </form>
+</body>
+
+</html>
